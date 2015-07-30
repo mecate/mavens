@@ -6,8 +6,8 @@
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
-        %span.icon-bar
-      = link_to 'Home', root_path, class: 'navbar-brand'
+      = link_to(root_path) do
+        = image_tag "logo", :class => "navbar-brand"
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         = render 'layouts/navigation_links'

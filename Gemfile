@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.2'
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -13,6 +13,7 @@ group :development, :test do
   gem 'spring'
 end
 gem 'bootstrap-sass'
+gem 'bootswatch-rails'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise_invitable'
@@ -23,12 +24,14 @@ gem 'pg'
 gem 'pundit'
 gem 'sendgrid'
 gem 'simple_form'
+gem "font-awesome-rails"
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_20]
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'
+  gem 'guard-livereload'
   gem 'html2haml'
   gem 'hub', :require=>nil
   gem 'rails_layout'

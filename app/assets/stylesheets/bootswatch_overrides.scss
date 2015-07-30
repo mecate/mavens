@@ -1,0 +1,17 @@
+@import "font-awesome";
+
+@import "bootstrap-sprockets";
+
+// Then bootstrap itself
+@import "bootstrap-custom";
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 120px; }
+
+.list-group-item{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.img-mini{
+  width: 30px;
+}
