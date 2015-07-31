@@ -3,6 +3,9 @@
   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
   <li><%= link_to 'Sign out', destroy_user_session_path, :method=>'delete' %></li>
 <% else %>
+  <li><%= link_to 'Index',  controller:"static_pages", action:"index" %></li>
+  <li><%= link_to 'Profile',  controller:"static_pages", action:"profile" %></li>
+  <li><%= link_to 'Organization', controller:"static_pages", action:"organization" %></li>
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
 <% end %>

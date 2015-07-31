@@ -1,0 +1,72 @@
+%div.row.well
+  %div.col-md-4.col-sm-6
+    %br
+    = image_tag "atelier.png", class: "img-responsive center-block"
+    %br
+    %p.text-center
+      %button.btn.btn-primary
+        %span.glyphicon.glyphicon-envelope{"aria-hidden":"true"}
+        Send Message
+      %button.btn.btn-success
+        %span.glyphicon.glyphicon-link{"aria-hidden":"true"}
+        Connect
+
+    %p
+      %h4
+        Endorsed by
+      %hr
+        - 24.times do
+          %a{"data-toggle":"tooltip", "data-placement":"top", "title":"", "data-original-title":"#{Faker::Name.name}"}
+            = image_tag "avatars/#{"%03d" % (1...60).to_a.sample}.jpg", class: "img-mini"
+
+
+
+
+  %div.col-md-8.col-sm-12
+    %h1
+      EntreNos Atelier
+    %div.row
+      %div.col-md-6
+        %h5
+          %span.glyphicon.glyphicon-briefcase{"aria-hidden":"true"}
+          Using design for Social benefit
+      %div.col-md-6
+        %h5
+          %span.glyphicon.glyphicon-home{"aria-hidden":"true"}
+          San José, Costa Rica
+    %div.row
+      %div.col-md-6
+        %h5
+          = fa_icon "globe"
+          %strong
+          Accepting volunteers: Woldwide
+      %div.col-md-6
+        %h5
+          = fa_icon "language"
+          Speaking: English, Spanish.
+
+
+
+    %hr
+    %div.row
+      %div.col-md-10
+        %div.list-group
+          %h4
+            = fa_icon "folder-open"
+            Description
+          %p
+            We are a collective started in San José Costa Rica that shares a humanist vision of design,
+            environmental sensibility, sustainability and a continuous experimentation with local materials.
+    %div.row
+      %div.col-md-10
+        %h4
+          = fa_icon "folder-open"
+          Open Projects
+        %div.list-group
+          %a.list-group-item
+            %strong.list-group-item-heading
+              Analyzing the composition of costarican clay to comply with FDA standars
+            %p.list-group-item-text
+              EntreNos is helping a group of local artisans to export their clay products to
+              the USA. However, we need a study about the materials and restrictions that
+              their clay products need to comply to be imported into the USA.

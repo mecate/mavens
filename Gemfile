@@ -12,8 +12,11 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+gem 'faker'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.14.30'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise_invitable'

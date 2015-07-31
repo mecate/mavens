@@ -1,7 +1,10 @@
 class StaticPagesController < ApplicationController
-  def perfil
+  def profile
   end
 
   def index
+  end
+
+  def organization
   end
 end
